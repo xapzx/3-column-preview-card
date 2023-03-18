@@ -1,0 +1,103 @@
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--transparent-white);
+}
+
+main {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sedans, .suvs, .luxury {
+    padding: 2.5rem;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    gap: 2rem;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+}
+
+.sedans .learn-btn {
+    color: var(--bright-orange);
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.suvs .learn-btn {
+    color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+.luxury .learn-btn {
+    color: var(--very-dark-cyan);
+}
+
+.title {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+}
+
+.learn-btn {
+    background-color: var(--very-light-gray);
+    border: none;
+    border-radius: 24px;
+    padding: 1rem;
+    width: 9rem;
+    font-size: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    align-items: end;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        height: auto;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 2rem;
+    }
+}

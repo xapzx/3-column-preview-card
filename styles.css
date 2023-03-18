@@ -55,6 +55,13 @@ main {
     color: var(--bright-orange);
 }
 
+.sedans .learn-btn:hover {
+    background-color: var(--bright-orange);
+    color: var(--transparent-white);
+    border: 2px solid var(--very-light-gray);
+    cursor: pointer;
+}
+
 .suvs {
     background-color: var(--dark-cyan);
 }
@@ -63,12 +70,26 @@ main {
     color: var(--dark-cyan);
 }
 
+.suvs .learn-btn:hover {
+    background-color: var(--dark-cyan);
+    color: var(--transparent-white);
+    border: 2px solid var(--very-light-gray);
+    cursor: pointer;
+}
+
 .luxury {
     background-color: var(--very-dark-cyan);
 }
 
 .luxury .learn-btn {
     color: var(--very-dark-cyan);
+}
+
+.luxury .learn-btn:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--transparent-white);
+    border: 2px solid var(--very-light-gray);
+    cursor: pointer;
 }
 
 .title {

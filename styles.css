@@ -120,5 +120,6 @@ main {
     main {
         flex-direction: column;
         margin: 2rem;
+        height: auto;
     }
 }
